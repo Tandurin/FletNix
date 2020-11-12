@@ -1,0 +1,41 @@
+/* BASE STYLES */
+
+html {
+    background-color: black;
+}
+
+html p {
+    color: white;
+    font-family: "Lucida Sand Unicode", "Lucida Grande", sans-serif;
+    font-size: 12pt;
+}
+
+h1, h2, h3 {
+    color: crimson;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* LINK STYLES */
+a {
+    color: white;
+    font-family: "Lucida Sand Unicode", "Lucida Grande", sans-serif;
+    font-size: 12pt;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+}
+
+a:hover {
+    color: crimson;
+}
