@@ -4,18 +4,23 @@ html {
     background-color: black;
 }
 
-html p {
+html p, li {
     color: white;
-    font-family: "Lucida Sand Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12pt;
 }
 
 h1, h2, h3 {
-    color: crimson;
+    color: chartreuse;
+    font-family: 'Goldman', cursive;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 4em;
+}
+
+h1.logo {
+    font-size: 5em;
 }
 
 h2 {
@@ -24,7 +29,6 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    text-decoration: underline;
 }
 
 /* LINK STYLES */
@@ -33,9 +37,13 @@ a {
     font-family: "Lucida Sand Unicode", "Lucida Grande", sans-serif;
     font-size: 12pt;
     text-decoration: underline;
-    text-decoration-color: crimson;
+    color: chartreuse;
 }
 
 a:hover {
-    color: crimson;
+    color: chartreuse;
+}
+
+img {
+    width: 500px;
 }
