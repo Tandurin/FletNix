@@ -1,2 +1,2 @@
 # FletNix
- Website for fictional streaming service
+ Website for streaming service
