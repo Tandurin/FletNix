@@ -1,4 +1,5 @@
 /* BASE STYLES */
+* {box-sizing: border-box;}
 
 html {
     background-color: black;
@@ -33,7 +34,7 @@ h3 {
 
 /* LINK STYLES */
 a {
-    font-family: "Lucida Sand Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     text-decoration: underline;
     color: chartreuse;
@@ -45,4 +46,66 @@ a:hover {
 
 img {
     width: 500px;
+}
+
+/* LOGIN PAGE */
+
+.loginform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    background-color: #222222;
+    width: 400px;
+    height: 400px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.loginform h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginform-icon {
+    padding: 10px;
+    background: chartreuse;
+    color: black;
+    text-align: center;
+    min-width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.loginform .inputfield {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.loginform .inputfield input{
+    width:100%;
+    padding: 10px;
+    outline: none;
+}
+
+.loginform .inputfield input:focus{
+    border: 2px solid chartreuse;
+    border-left-width: 0;
+}
+
+/* Kleine apparaten (telefoons, maximaal 768px) */
+@media only screen and (max-width: 768px){
+    
+}
+
+/* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Grote apparaten (laptops en computers, 1200px en hoger) */
+@media only screen and (min-width: 1200px) {
+    
 }
