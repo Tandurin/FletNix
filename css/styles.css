@@ -64,7 +64,7 @@ img {
     transform: translateY(-50%) translateX(-50%);
 }
 
-.loginform h2{
+.loginform h2 {
     margin-left: auto;
     margin-right: auto;
 }
@@ -84,15 +84,32 @@ img {
     margin-bottom: 15px;
 }
 
-.loginform .inputfield input{
+.loginform .inputfield input {
     width:100%;
     padding: 10px;
     outline: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-.loginform .inputfield input:focus{
+.loginform .inputfield input:focus {
     border: 2px solid chartreuse;
     border-left-width: 0;
+}
+
+.loginform input[type=submit] {
+    display: flex;
+    width: 40%;
+    height: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: chartreuse;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.loginform input[type=submit]:hover {
+    background-color: rgb(201, 255, 146);
 }
 
 /* Kleine apparaten (telefoons, maximaal 768px) */
