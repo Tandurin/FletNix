@@ -12,8 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/f7d63ff249.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,7 +27,24 @@
         </header>
 
         <main>
-            
+            <section>
+                <div class="loginform">
+                    <h2>Log In</h2>
+                    <form action="#">
+                        <div class="inputfield">
+                            <i class="fa fa-user fa-lg loginform-icon"></i>
+                            <input type="text" id="name" name="name" placeholder="E-mailadres">
+                        </div>
+                        <div class="inputfield">
+                            <i class="fa fa-key fa-lg loginform-icon"></i>
+                            <input type="text" id="pass" name="pass" placeholder="Wachtwoord">
+                        </div>
+                        <div>
+                            <input type="submit" value="Log In">
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <footer>
