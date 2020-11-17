@@ -12,7 +12,7 @@ html p, li {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -72,7 +72,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 60vw;
+    width: 100vw;
 }
 
 .navbar a {
@@ -94,6 +94,92 @@ img {
 .navbar a.final-item {
     align-self: flex-end;
 }
+
+/* MAIN PAGE */
+
+main section.main-view {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+div.test-main {
+    height: 100vh;
+}
+
+main section.offers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    margin: 1rem;
+}
+
+main section div.offers-header {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+}
+
+main section div.offers-item {
+    width: 100%;
+    height: 60vh;
+    background-color: indianred;
+    grid-row-start: 2;
+}
+
+main section.call-to-action {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+main section div.cta-message {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(40vh - 2rem - 168px);
+    background-color: #111111;
+}
+
+main section div.cta-button {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+    margin-top: 1rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div.item {
+    width: 150px;
+    height: 100%;
+    background-color: red;
+}
+
+footer p.item {
+
+}
+
 /* LOGIN PAGE */
 
 .loginform {
@@ -164,7 +250,13 @@ img {
 
 /* Kleine apparaten (telefoons, maximaal 768px) */
 @media only screen and (max-width: 768px){
-    
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar nav {
+        width: 60vw;
+    }
 }
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
@@ -174,20 +266,5 @@ img {
 
 /* Grote apparaten (laptops en computers, 1200px en hoger) */
 @media only screen and (min-width: 1200px) {
-    
-}
-
-main {
-
-}
-
-main section.main-view {
-    width: 100%;
-    height: calc(100vh);
-    background-color: aqua;
-}
-
-main section.offers {
-    display: grid;
     
 }
