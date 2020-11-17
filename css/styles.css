@@ -12,6 +12,7 @@ html p, li {
 }
 
 body {
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +55,45 @@ img {
     width: 500px;
 }
 
+/* NAVBAR */
+
+.navbar {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+.navbar nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+}
+
+.navbar a {
+    height: 55px;
+    font-size: 16pt;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    font-size: 16pt;
+    color: black;
+    background-color: chartreuse;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.navbar a.final-item {
+    align-self: flex-end;
+}
 /* LOGIN PAGE */
 
 .loginform {
@@ -134,5 +174,20 @@ img {
 
 /* Grote apparaten (laptops en computers, 1200px en hoger) */
 @media only screen and (min-width: 1200px) {
+    
+}
+
+main {
+
+}
+
+main section.main-view {
+    width: 100%;
+    height: calc(100vh);
+    background-color: aqua;
+}
+
+main section.offers {
+    display: grid;
     
 }
