@@ -248,6 +248,11 @@ footer p.item {
     align-content: center;
 }
 
+.loginform label {
+    visibility: hidden;
+    width: 0;
+}
+
 /* Kleine apparaten (telefoons, maximaal 768px) */
 @media only screen and (max-width: 768px){
     .navbar {
