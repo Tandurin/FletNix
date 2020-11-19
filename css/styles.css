@@ -174,12 +174,12 @@ main section div.offers-header {
     justify-content: center;
 }
 
-main section div.offers-item img{
-    width: 500px;
-}
-
 main section div.offers-item {
     width: 100%;
+}
+
+main div.offers-item img{
+    width: 500px;
 }
 
 main section.call-to-action {
