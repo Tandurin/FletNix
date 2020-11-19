@@ -13,8 +13,15 @@ html p, li, button {
 
 button {
     color: black;
+    border: none;
+    background-color: chartreuse;
     font-weight: bold;
     font-size: 1.5em;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 1;
 }
 
 body {
@@ -63,11 +70,10 @@ img {
 /* NAVBAR */
 
 .navbar {
-    height: 55px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    background-color: black;
+    background-color: #282828;
     z-index: 1;
 }
 
@@ -78,7 +84,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
 }
 
 h1.logo-inline {
@@ -113,6 +118,10 @@ h1.logo-inline {
 }
 
 /* MAIN PAGE */
+
+main {
+    flex: 1 0 auto;
+}
 
 main section.main-view {
     width: 100%;
@@ -204,17 +213,11 @@ div.cta-button a {
 .sub-button {
     width: 100%;
     height: 100%;
-    background-color: chartreuse;
-    border: none;
-    opacity: 0.9;
     border-radius: 25px;
 }
 
-.sub-button:hover {
-    opacity: 1;
-}
-
 footer {
+    flex-shrink: 0;
     width: 100%;
     height: 100px;
     background-color: #282828;
@@ -311,12 +314,38 @@ div.item > h1.logo-inline {
     width: 0;
 }
 
+/* DETAILS PAGE */
+.detailspage {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main.show-details {
+    width: 60vw;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+section.show-data {
+    grid-row-start: 1;
+}
+
+section.show-description {
+    grid-row-start: 3;
+}
+
+section.still-image {
+    grid-row: 2;
+}
+
+.show-data > ul {
+    list-style: none;
+}
+
 /* Kleine apparaten (telefoons, maximaal 768px) */
 @media only screen and (max-width: 768px){
-    .navbar {
-        height: 110px;
-    }
-
     .navbar nav {
         width: 60vw;
     }
@@ -351,5 +380,18 @@ div.item > h1.logo-inline {
 
     main div.offers-item img {
         width: 24vw;
+    }
+
+    section.show-data {
+        grid-row-start: 1;
+    }
+    
+    section.show-description {
+        grid-row-start: 2;
+    }
+    
+    section.still-image {
+        grid-row: 1 / 3;
+        grid-column-start: 2;
     }
 }
