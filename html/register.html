@@ -21,8 +21,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-
+        <header class="navbar">
+            <nav>
+                <a href="../index.html"><h1 class="logo-inline">NETNIX</h1></a>
+                <a href="../html/filmOverview.html">Kijken</a>
+                <a href="../html/subscription.html">Abonnementen</a>
+                <a href="../html/aboutus.html">Over Ons</a>
+                <a class="final-item" href="../html/login.html">Log In</a>
+            </nav>
         </header>
         <main>
             <section class="registration-form">
@@ -30,17 +36,22 @@
                     <div class="inputfield"><!--E-mailadres-->
                         <label for="email">E-mailadres</label>
                         <i class="fa fa-envelope fa-lg registerform-icon"></i>
-                        <input required type="email" id="email" name="email" placeholder="voorbeeld@123.nl"/>
+                        <input required type="email" id="email" name="email" 
+                        placeholder="voorbeeld@123.nl" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
                     </div>
                     <div><!--Pass-->
                         <label for="password">Wachtwoord</label>
                         <i class="fa fa-key fa-lg registerform-icon"></i>
-                        <input required type="password" id="password" name="password" placeholder="Wachtwoord" />
+                        <input required type="password" id="password" name="password" 
+                        placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn."/>
                     </div>
                     <div><!--Repeat Pass-->
                         <label for="password-check">Herhaal Wachtwoord</label>
                         <i class="fa fa-key fa-lg registerform-icon"></i>
-                        <input required type="password" id="password-check" name="password-check" placeholder="Herhaal wachtwoord" />
+                        <input required type="password" id="password-check" name="password-check" 
+                        placeholder="Herhaal wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn."/>
                     </div>
                     <div><!--Geboortedatum-->
                         <label for="birthdate">Geboortedatum</label>

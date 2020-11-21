@@ -24,8 +24,9 @@
         <header class="navbar">
             <nav>
                 <a href="../index.html"><h1 class="logo-inline">NETNIX</h1></a>
-                <a href="../html/aboutus.html">Over Ons</a>
+                <a href="../html/filmOverview.html">Kijken</a>
                 <a href="../html/subscription.html">Abonnementen</a>
+                <a href="../html/aboutus.html">Over Ons</a>
                 <a class="final-item" href="../html/login.html">Log In</a>
             </nav>
         </header>
@@ -37,12 +38,16 @@
                     <div class="inputfield">
                         <label for="email">E-mailadres</label>
                         <i class="fa fa-user fa-lg loginform-icon"></i>
-                        <input type="email" id="email" name="email" placeholder="E-mailadres">
+                        <input required type="email" id="email" name="email" 
+                        placeholder="E-mailadres" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." />
                     </div>
                     <div class="inputfield">
                         <label for="pass">Wachtwoord</label>
                         <i class="fa fa-key fa-lg loginform-icon"></i>
-                        <input type="text" id="pass" name="pass" placeholder="Wachtwoord">
+                        <input required type="password" id="pass" name="pass" 
+                        placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." />
                     </div>
                     <input type="submit" value="Log In">
                 </form>
