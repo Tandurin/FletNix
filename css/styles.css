@@ -71,6 +71,13 @@ a:hover {
     color: white;
 }
 
+.centerpage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -269,9 +276,6 @@ div.item > h1.logo-inline {
 /* LOGIN PAGE */
 
 .loginform {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     display: flex;
     background-color: #222222;
     width: 400px;
@@ -279,7 +283,6 @@ div.item > h1.logo-inline {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    transform: translateY(-50%) translateX(-50%);
 }
 
 .loginform h2 {
