@@ -123,6 +123,30 @@ h1.logo-inline {
     align-self: flex-end;
 }
 
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar button.final-item {
+    justify-self: flex-end;
+}
+
+.navbar div.dropdown-cnt {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    z-index: 1;
+}
+
+.navbar div.dropdown-cnt a {
+    display: block;
+}
+
+.navbar div.dropdown:hover .dropdown-cnt {
+    display: block;
+}
+
 /* MAIN PAGE */
 
 main section.main-view {

@@ -12,8 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/styles.css">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
@@ -22,11 +22,17 @@
         <![endif]-->
         <header class="navbar">
             <nav>
-                <a href="#"><h1 class="logo-inline">NETNIX</h1></a>
-                <a href="html/filmOverview.html">Kijken</a>
-                <a href="html/subscription.html">Abonnementen</a>
-                <a href="html/aboutus.html">Over Ons</a>
-                <a class="final-item" href="html/login.html">Log In</a>
+                <a href="../html/loggedin/index.html"><h1 class="logo-inline">NETNIX</h1></a>
+                <a href="../html/loggedin/filmOverview.html">Kijken</a>
+                <a href="../html/loggedin/subscription.html">Abonnementen</a>
+                <a href="../html/loggedin/aboutus.html">Over Ons</a>
+                <div class="dropdown">
+                    <button class="final-item">David Gebruiker</button>
+                    <div class="dropdown-cnt">
+                        <a href="../html/loggedin/profile.html">Profiel</a>
+                        <a href="../../index.html">Logout</a>
+                    </div>
+                </div>
             </nav>
         </header>
 
