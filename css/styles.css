@@ -410,6 +410,28 @@ section.play-button {
     font-size: 0.8em;
 }
 
+
+/* FILM OVERVIEW PAGE */
+
+.film-overview {
+    display: flex;
+}
+
+section.navbar2 {
+    display: flex;
+    width: 10%;
+    background-color: #28282893;
+    padding-left: 1%;
+    padding-right: 1%;
+    flex-direction: column;
+}
+
+section.film-list {
+    display: flex;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
 /* Kleine apparaten (telefoons, maximaal 768px) */
 @media only screen and (max-width: 768px){
     
