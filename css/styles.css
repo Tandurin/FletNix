@@ -419,26 +419,29 @@ section.play-button {
 
 section.navbar2 {
     display: flex;
-    width: 10%;
+    width: 10vw;
     background-color: #28282893;
     padding-left: 1%;
     padding-right: 1%;
     flex-direction: column;
+    margin-right: 5vw;
+}
+
+.navbar2 a {
+    font-size: 1.8vw;
+}
+
+.film-list img {
+    width: 16vw;
+    margin-right: 0.2vw;
+}
+
+.film-list h2 {
+    font-size: 2vw;
 }
 
 /* Kleine apparaten (telefoons, maximaal 768px) */
 @media only screen and (max-width: 768px){
-    
-    /* FilmOverview */
-
-    section.film-list {
-        margin-left: 5%;
-    } 
-    
-    .film-list img {
-        width: 75px;
-        margin-right: 1px;
-    }
 }
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
@@ -487,17 +490,6 @@ section.navbar2 {
     .play-button > button {
         min-height: 50px;
     }
-
-    /* FilmOverview */
-
-    section.film-list {
-        margin-left: 5%;
-    } 
-    
-    .film-list img {
-        width: 120px;
-        margin-right: 5px;
-    }
 }
 
 /* Grote apparaten (laptops en computers, 1200px en hoger) */
@@ -528,16 +520,5 @@ section.navbar2 {
 
     section.play-button {
         grid-row: 4;
-    }
-
-    /* FilmOverview */
-
-    section.film-list {
-        margin-left: 6%;
-    } 
-    
-    .film-list img {
-        width: 200px;
-        margin-right: 5px;
     }
 }
