@@ -478,6 +478,20 @@ section.play-button {
 
 /* FILM OVERVIEW PAGE */
 
+.navbar2 a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+section.navbar2 {
+    width: 100px;
+}
+
+.film-list img {
+    width: 15vw;
+    margin-right: 0.2vw;
+}
+
 .film-overview {
     display: flex;
 }
@@ -494,6 +508,7 @@ section.navbar2 {
 
 .navbar2 a {
     font-size: 1.8vw;
+    text-decoration: none;
 }
 
 .film-list img {
@@ -705,7 +720,6 @@ div.sub-3 {
 .searchform label {
     visibility: hidden;
     width: 0;
-}
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
 @media only screen and (min-width: 768px) {
@@ -837,5 +851,12 @@ div.sub-3 {
 
     .navbar div.dropdown button{
         display: block;
+    .navbar2 a {
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    section.navbar2 {
+        width: 200px;
     }
 }
