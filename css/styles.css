@@ -123,6 +123,18 @@ a:hover {
     transform: translateY(-50%) translateX(-50%);
 }
 
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -185,18 +197,21 @@ h1.logo-inline {
 }
 
 .navbar div.dropdown-cnt {
-    display: none;
-    position: absolute;
+    display: block;
     background-color: #282828;
     z-index: 1;
 }
 
 .navbar div.dropdown-cnt a {
-    display: block;
+    display: inline-block;
 }
 
 .navbar div.dropdown:hover .dropdown-cnt {
-    display: block;
+    display: flexbox;
+}
+
+.navbar div.dropdown button{
+    display: none;
 }
 
 /* MAIN PAGE */
@@ -463,6 +478,20 @@ section.play-button {
 
 /* FILM OVERVIEW PAGE */
 
+.navbar2 a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+section.navbar2 {
+    width: 100px;
+}
+
+.film-list img {
+    width: 15vw;
+    margin-right: 0.2vw;
+}
+
 .film-overview {
     display: flex;
 }
@@ -497,22 +526,200 @@ video.show-player {
     width: 90vw;
 }
 
-/* Kleine apparaten (telefoons, maximaal 768px) */
-@media only screen and (max-width: 768px){
-    .navbar2 a {
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    section.navbar2 {
-        width: 100px;
-    }
-
-    .film-list img {
-        width: 15vw;
-        margin-right: 0.2vw;
-    }
+/* SUBSCRIPTION PAGE */
+.subscription-options {
+    margin-top: 1rem;
+    display: grid;
+    grid-gap: 1em;
+    width: 365px;
 }
+
+div.sub-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    border: 2px solid chartreuse;
+}
+
+div.sub-1 {
+    grid-row: 1;
+    background-color: #282828;
+}
+
+div.sub-2 {
+    grid-row: 2;
+    background-color: #282828;
+}
+
+div.sub-3 {
+    grid-row: 3;
+    background-color: #282828;
+}
+
+.regbutton {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    width: 100%;
+    height: 5rem;
+}
+
+.regbutton button {
+    border-radius: 12px;
+    width: 365px;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.subimg {
+    background-color: rgba(128, 255, 0, 0.5);
+    width: 160px;
+    border-radius: 80px;
+    margin: 1rem;
+}
+
+/* REGISTRATION PAGE */
+
+.registration-form {
+    display: flex;
+    background-color: #222222;
+    width: 400px;
+    height: 600px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.registration-form h2 {
+    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+}
+
+.registerform-icon {
+    padding: 10px;
+    background: chartreuse;
+    color: black;
+    text-align: center;
+    min-width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.registration-form .inputfield {
+    display: flex;
+    width: 100%;
+}
+
+.registration-form .inputfield input {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.registration-form .inputfield select {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -1rem;
+}
+
+.registration-form .inputfield input:focus {
+    border: 2px solid chartreuse;
+    border-left-width: 0;
+}
+
+.registration-form input[type=submit] {
+    height: 20pt;
+    background-color: chartreuse;
+    opacity: 0.9;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.registration-form input[type=submit]:hover {
+    opacity: 1;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.registration-form p {
+    margin-bottom: 5px;
+}
+
+.registration-form label {
+    visibility: hidden;
+    width:0;
+}
+
+/* SEARCH PAGE */
+
+.searchform {
+    display: flex;
+    background-color: #222222;
+    width: 400px;
+    height: 400px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchform .inputfield {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.searchform .inputfield p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.searchform .inputfield input {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.searchform .inputfield input:focus {
+    border: 2px solid chartreuse;
+    border-left-width: 0;
+}
+
+.searchform input[type=submit] {
+    height: 20pt;
+    background-color: chartreuse;
+    opacity: 0.9;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.searchform input[type=submit]:hover {
+    opacity: 1;
+}
+
+.searchform form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchform label {
+    visibility: hidden;
+    width: 0;
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
 @media only screen and (min-width: 768px) {
@@ -560,6 +767,10 @@ video.show-player {
     .play-button > button {
         min-height: 50px;
     }
+
+    .regbutton {
+        width: 100%;
+    }
 }
 
 /* Grote apparaten (laptops en computers, 1200px en hoger) */
@@ -592,6 +803,54 @@ video.show-player {
         grid-row: 4;
     }
 
+    div.sub-1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    div.sub-2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    div.sub-3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    div.sub-item {
+        width: 25.5vw;
+    }
+
+    .regbutton {
+        width: 100%;
+    }
+
+    .subscription-options {
+        width: 80vw;
+    }
+
+    .subscription-fill {
+        margin: 53px 0;
+    }
+
+    .navbar div.dropdown-cnt {
+        display: none;
+        position: absolute;
+        background-color: #282828;
+        z-index: 1;
+    }
+    
+    .navbar div.dropdown-cnt a {
+        display: block;
+    }
+    
+    .navbar div.dropdown:hover .dropdown-cnt {
+        display: block;
+    }
+
+    .navbar div.dropdown button{
+        display: block;
     .navbar2 a {
         font-size: 30px;
         text-decoration: none;

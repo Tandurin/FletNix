@@ -11,9 +11,8 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@300&display=swap" rel="stylesheet" /> 
-        <link rel="stylesheet" href="../css/normalize.css" />
-        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../../css/normalize.css" />
+        <link rel="stylesheet" href="../../css/styles.css" />
         <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
@@ -22,14 +21,14 @@
         <![endif]-->
         <header class="navbar">
             <nav>
-                <a href="../index.html"><h1 class="logo-inline">NETNIX</h1></a>
-                <a href="../html/filmOverview.html">Kijken</a>
-                <a href="../html/subscription.html">Abonnementen</a>
-                <a href="../html/aboutus.html">Over Ons</a>
+                <a href="../../html/loggedin/index.html"><h1 class="logo-inline">NETNIX</h1></a>
+                <a href="../../html/loggedin/filmOverview.html">Kijken</a>
+                <a href="../../html/loggedin/subscription.html">Abonnementen</a>
+                <a href="../../html/loggedin/aboutus.html">Over Ons</a>
                 <div class="dropdown">
                     <button class="final-item">David Gebruiker</button>
                     <div class="dropdown-cnt">
-                        <a href="../html/loggedin/profile.html">Profiel</a>
+                        <a href="../../html/loggedin/profile.html">Profiel</a>
                         <a href="../../index.html">Logout</a>
                     </div>
                 </div>
@@ -37,11 +36,58 @@
         </header>
 
         <main>
-            
+            <div class="flexcontainer subscription-fill">
+                <section class="subscription-options">
+                    <div class="sub-1 sub-item">
+                        <div class="subimg">
+                            <img src="../../img/icon/icon-sub-1.png" alt="Afbeelding Abonnementoptie 1" />
+                        </div>
+                        <h3>Abbo 1</h3>
+                        <ul>
+                            <li>punt 1</li>
+                            <li>punt 2</li>
+                            <li>punt 3</li>
+                            <li>punt 4</li>
+                        </ul>
+                    </div>
+                    <div class="sub-2 sub-item">
+                        <div class="subimg">
+                            <img src="../../img/icon/icon-sub-2.png" alt="Afbeelding Abonnementoptie 1" />
+                        </div>
+                        <h3>Abbo 2</h3>
+                        <ul>
+                            <li>punt 1</li>
+                            <li>punt 2</li>
+                            <li>punt 3</li>
+                            <li>punt 4</li>
+                        </ul>
+                    </div>
+                    <div class="sub-3 sub-item">
+                        <div class="subimg">
+                            <img src="../../img/icon/icon-sub-3.png" alt="Afbeelding Abonnementoptie 1" />
+                        </div>
+                        <h3>Abbo 3</h3>
+                        <ul>
+                            <li>punt 1</li>
+                            <li>punt 2</li>
+                            <li>punt 3</li>
+                            <li>punt 4</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="flexcontainer">
+                    <a href="../html/register.html" class="regbutton"><button>Abonneer nu</button></a>
+                </section>
+            </div>
         </main>
 
-        <footer>
-            
+        <footer class="footer">
+            <div class="item">
+                <h1 class="logo-inline">NETNIX</h1>
+            </div>
+            <p>
+                ©2020
+            </p>
         </footer>
     </body>
 </html>
