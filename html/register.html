@@ -30,34 +30,49 @@
                 <a class="final-item" href="../html/login.html">Log In</a>
             </nav>
         </header>
-        <main>
+        <main class="flexcontainer">
             <section class="registration-form">
-                <form action="#">
+                <h2>NETNIX</h2>
+                <form action="../html/loggedin/profile.html">
+                    <p>E-mailadres</p>
                     <div class="inputfield"><!--E-mailadres-->
                         <label for="email">E-mailadres</label>
                         <i class="fa fa-envelope fa-lg registerform-icon"></i>
                         <input required type="email" id="email" name="email" 
                         placeholder="voorbeeld@123.nl" />
                     </div>
-                    <div><!--Pass-->
+                    <p>Wachtwoord</p>
+                    <div class="inputfield"><!--Pass-->
                         <label for="password">Wachtwoord</label>
                         <i class="fa fa-key fa-lg registerform-icon"></i>
                         <input required type="password" id="password" name="password" 
                         placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                         title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn."/> <!-- Pattern gevonden op htpp://html5pattern.com -->
                     </div>
-                    <div><!--Repeat Pass-->
+                    <p>Herhaal Wachtwoord</p>
+                    <div class="inputfield"><!--Repeat Pass-->
                         <label for="password-check">Herhaal Wachtwoord</label>
                         <i class="fa fa-key fa-lg registerform-icon"></i>
                         <input required type="password" id="password-check" name="password-check" 
                         placeholder="Herhaal wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                         title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn."/> <!-- Pattern gevonden op htpp://html5pattern.com -->
                     </div>
-                    <div><!--Geboortedatum-->
+                    <p>Geboortedatum</p>
+                    <div class="inputfield flex-center"><!--Geboortedatum-->
                         <label for="birthdate">Geboortedatum</label>
                         <i class="fa fa-calendar fa-lg registerform-icon"></i>
                         <input required type="date" id="birthdate" name="birthdate" />
                     </div>
+                    <p>Abonnementstype</p>
+                    <div class="inputfield flexcontainer">
+                        <label for="sub-type">Abonnementstype</label>
+                        <select id="sub-type" name="Abonnementstype">
+                            <option value="een">Een</option>
+                            <option value="twee">Twee</option>
+                            <option value="drie">Drie</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Registeren">
                 </form>
             </section>
         </main>
