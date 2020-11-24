@@ -130,6 +130,11 @@ a:hover {
     align-items: center;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -192,18 +197,21 @@ h1.logo-inline {
 }
 
 .navbar div.dropdown-cnt {
-    display: none;
-    position: absolute;
+    display: block;
     background-color: #282828;
     z-index: 1;
 }
 
 .navbar div.dropdown-cnt a {
-    display: block;
+    display: inline-block;
 }
 
 .navbar div.dropdown:hover .dropdown-cnt {
-    display: block;
+    display: flexbox;
+}
+
+.navbar div.dropdown button{
+    display: none;
 }
 
 /* MAIN PAGE */
@@ -638,9 +646,65 @@ div.sub-3 {
     width:0;
 }
 
-.flex-center {
+/* SEARCH PAGE */
+
+.searchform {
     display: flex;
+    background-color: #222222;
+    width: 400px;
+    height: 400px;
+    flex-flow: column wrap;
     justify-content: center;
+    align-content: center;
+}
+
+.searchform .inputfield {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.searchform .inputfield p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.searchform .inputfield input {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.searchform .inputfield input:focus {
+    border: 2px solid chartreuse;
+    border-left-width: 0;
+}
+
+.searchform input[type=submit] {
+    height: 20pt;
+    background-color: chartreuse;
+    opacity: 0.9;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.searchform input[type=submit]:hover {
+    opacity: 1;
+}
+
+.searchform form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchform label {
+    visibility: hidden;
+    width: 0;
 }
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
@@ -754,5 +818,24 @@ div.sub-3 {
 
     .subscription-fill {
         margin: 53px 0;
+    }
+
+    .navbar div.dropdown-cnt {
+        display: none;
+        position: absolute;
+        background-color: #282828;
+        z-index: 1;
+    }
+    
+    .navbar div.dropdown-cnt a {
+        display: block;
+    }
+    
+    .navbar div.dropdown:hover .dropdown-cnt {
+        display: block;
+    }
+
+    .navbar div.dropdown button{
+        display: block;
     }
 }
