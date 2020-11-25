@@ -722,6 +722,25 @@ div.sub-3 {
     width: 0;
 }
 
+/* ZOEKRESULTATEN */
+.searchresults h2 {
+    margin-top: 2rem;
+}
+
+.resultsflex {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.resultsflex img{
+    width: 80vw;
+    margin: 2rem;
+}
+
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
 @media only screen and (min-width: 768px) {
     main section div.offers-header {
@@ -771,6 +790,16 @@ div.sub-3 {
 
     .regbutton {
         width: 100%;
+    }
+
+    .resultsflex {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .resultsflex img{
+        width: 40vw;
+        margin: 5vw;
     }
 }
 
@@ -861,5 +890,10 @@ div.sub-3 {
 
     section.navbar2 {
         width: 200px;
+    }
+
+    .resultsflex img{
+        width: 20vw;
+        margin: 2vw;
     }
 }
