@@ -720,6 +720,7 @@ div.sub-3 {
 .searchform label {
     visibility: hidden;
     width: 0;
+}
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
 @media only screen and (min-width: 768px) {
@@ -851,6 +852,8 @@ div.sub-3 {
 
     .navbar div.dropdown button{
         display: block;
+    }
+
     .navbar2 a {
         font-size: 30px;
         text-decoration: none;
