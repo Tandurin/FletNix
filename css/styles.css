@@ -584,7 +584,7 @@ div.sub-3 {
 .searchform {
     margin-top: 2rem;
     display: flex;
-    background-color: #222222;
+    background-color: #282828;
     width: 400px;
     height: 400px;
     flex-flow: column wrap;
@@ -664,7 +664,7 @@ div.sub-3 {
 .form {
     margin-top: 2rem;
     display: flex;
-    background-color: #222222;
+    background-color: #282828;
     width: 400px;
     flex-flow: column wrap;
     justify-content: center;
