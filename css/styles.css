@@ -445,7 +445,13 @@ section.navbar2 {
 
 .film-list img {
     width: 16vw;
-    margin-right: 0.2vw;
+    margin-right: 0.3vw;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.film-list img:hover {
+    box-shadow: 0px 0px 20px chartreuse;
+    transform: scale(1.02);
 }
 
 .film-list h2 {
