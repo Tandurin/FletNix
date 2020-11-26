@@ -456,6 +456,10 @@ div.foto-lijst {
     flex: 0 0 auto;
 }
 
+.film-list h2 {
+    margin-left: 2rem;
+}
+
 .film-list img {
     width: 40vw;
     margin: 0 10px;
