@@ -445,7 +445,13 @@ section.navbar2 {
 
 .film-list img {
     width: 16vw;
-    margin-right: 0.2vw;
+    margin-right: 0.3vw;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.film-list img:hover {
+    box-shadow: 0px 0px 20px chartreuse;
+    transform: scale(1.02);
 }
 
 .film-list h2 {
@@ -578,7 +584,7 @@ div.sub-3 {
 .searchform {
     margin-top: 2rem;
     display: flex;
-    background-color: #222222;
+    background-color: #282828;
     width: 400px;
     height: 400px;
     flex-flow: column wrap;
@@ -658,7 +664,7 @@ div.sub-3 {
 .form {
     margin-top: 2rem;
     display: flex;
-    background-color: #222222;
+    background-color: #282828;
     width: 400px;
     flex-flow: column wrap;
     justify-content: center;
