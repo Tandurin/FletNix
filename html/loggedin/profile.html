@@ -42,6 +42,7 @@
                 </div>
                 <form>
                     <h2>David Gebruiker</h2>
+                    <hr>
                     <p>E-mailadres Oud:</p>
                     <div class="inputfield">
                         <label for="email">E-mailadres Oud</label>
@@ -56,10 +57,26 @@
                         <input required type="email" id="email" name="email" 
                         placeholder="E-mailadres" title="E-mail moet juist geformuleerd zijn. Bijvoorbeeld: voorbeeld@host.nl" />
                     </div>
+                    <hr>
+                    <p>Voornaam</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="name">Voornaam</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input type="text" id="name" name="name" 
+                        placeholder="Voornaam" />
+                    </div>
+                    <p>Achternaam</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="surname">Achternaam</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input type="text" id="surname" name="surname" 
+                        placeholder="Achternaam" />
+                    </div>
+                    <hr>
                     <p>Wachtwoord:</p>
                     <div class="inputfield">
                         <label for="pass">Wachtwoord</label>
-                        <i class="fa fa-key fa-lg loginform-icon"></i>
+                        <i class="fa fa-key fa-lg form-icon"></i>
                         <input required type="password" id="pass" name="pass" 
                         placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." /> <!-- Pattern gevonden op htpp://html5pattern.com -->
@@ -67,11 +84,12 @@
                     <p>Herhaal Wachtwoord:</p>
                     <div class="inputfield">
                         <label for="pass">Wachtwoord</label>
-                        <i class="fa fa-key fa-lg loginform-icon"></i>
+                        <i class="fa fa-key fa-lg form-icon"></i>
                         <input required type="password" id="pass" name="pass" 
                         placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." /> <!-- Pattern gevonden op htpp://html5pattern.com -->
                     </div>
+                    <hr>
                     <input type="submit" value="Wijzigen">
                 </form>
             </section>

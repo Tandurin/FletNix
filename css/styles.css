@@ -492,10 +492,7 @@ div.foto-lijst {
     border: 1px;
     border-color: chartreuse;
     border-style: solid;
-    margin-top: 5vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-bottom: 10vw;
+    margin: 2rem;
 }
 
 .AboutUs img {
@@ -506,23 +503,14 @@ section.pictures {
 display: grid;
 }
 
-div.foto1 {
+div.foto {
     display: flex;
     justify-content: center;
 }
 
-div.foto2 {
+div.text {
     display: flex;
-    justify-content: center;
-}
-
-div.text1 {
-    display: flex;
-    justify-content: center;
-}
-
-div.text2 {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -685,6 +673,7 @@ div.sub-3 {
 
 .form p {
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .user-icon {
@@ -752,7 +741,10 @@ div.sub-3 {
     padding: 10px;
     outline: none;
     font-family: 'Roboto', sans-serif;
-    margin-top: -1rem;
+}
+
+.form hr {
+    width: 100%;
 }
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */

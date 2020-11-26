@@ -32,6 +32,36 @@
             <section class="form">
                 <h2>FLETNIX</h2>
                 <form action="../html/loggedin/profile.html">
+                    <p>Voornaam</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="name">Voornaam</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="text" id="name" name="name" 
+                        placeholder="Voornaam" />
+                    </div>
+                    <p>Achternaam</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="surname">Achternaam</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="text" id="surname" name="surname" 
+                        placeholder="Achternaam" />
+                    </div>
+                    <p>Land</p>
+                    <div class="inputfield flex-center"><!--Geboortedatum-->
+                        <label for="country">Land</label>
+                        <select required id="country">
+                            <option value="nl">Nederland</option>
+                            <option value="be">Beglië</option>
+                            <option value="lu">Luxemburg</option>
+                        </select>
+                    </div>
+                    <p>Geboortedatum</p>
+                    <div class="inputfield flex-center"><!--Geboortedatum-->
+                        <label for="birthdate">Geboortedatum</label>
+                        <i class="fa fa-calendar fa-lg form-icon"></i>
+                        <input required type="date" id="birthdate" name="birthdate" />
+                    </div>
+                    <hr>
                     <p>E-mailadres</p>
                     <div class="inputfield"><!--E-mailadres-->
                         <label for="email">E-mailadres</label>
@@ -39,6 +69,23 @@
                         <input required type="email" id="email" name="email" 
                         placeholder="voorbeeld@123.nl" />
                     </div>
+                    <p>Rekeningnummer</p>
+                    <div class="inputfield"><!--E-mailadres-->
+                        <label for="bankacc">Rekeningnummer</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="text" id="bankacc" name="bankacc" 
+                        placeholder="Rekeningnummer" />
+                    </div>
+                    <p>Abonnementstype</p>
+                    <div class="inputfield flex-center">
+                        <label for="sub-type">Abonnementstype</label>
+                        <select required id="sub-type" name="Abonnementstype">
+                            <option value="een">Een</option>
+                            <option value="twee">Twee</option>
+                            <option value="drie">Drie</option>
+                        </select>
+                    </div>
+                    <hr>
                     <p>Wachtwoord</p>
                     <div class="inputfield"><!--Pass-->
                         <label for="password">Wachtwoord</label>
@@ -55,21 +102,7 @@
                         placeholder="Herhaal wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                         title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn."/> <!-- Pattern gevonden op htpp://html5pattern.com -->
                     </div>
-                    <p>Geboortedatum</p>
-                    <div class="inputfield flex-center"><!--Geboortedatum-->
-                        <label for="birthdate">Geboortedatum</label>
-                        <i class="fa fa-calendar fa-lg form-icon"></i>
-                        <input required type="date" id="birthdate" name="birthdate" />
-                    </div>
-                    <p>Abonnementstype</p>
-                    <div class="inputfield flexcontainer">
-                        <label for="sub-type">Abonnementstype</label>
-                        <select id="sub-type" name="Abonnementstype">
-                            <option value="een">Een</option>
-                            <option value="twee">Twee</option>
-                            <option value="drie">Drie</option>
-                        </select>
-                    </div>
+                    <hr>
                     <input type="submit" value="Registeren">
                 </form>
             </section>
