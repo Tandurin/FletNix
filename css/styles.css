@@ -47,6 +47,7 @@
 
 html {
     background-color: black;
+    scroll-padding-top: 200px;
 }
 
 p, li, button {
@@ -73,6 +74,7 @@ button {
 
 button:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 body {
@@ -409,53 +411,60 @@ section.play-button {
 
 /* FILM OVERVIEW PAGE */
 
+.overview-grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    overflow: hidden;
+}
+
 .film-overview {
+    width: 100vw;
+    grid-row: 2;
     display: flex;
-    margin-top: 2rem;
 }
 
 .navbar2 a {
-    font-size: 20px;
+    font-size: 1em;
     text-decoration: none;
 }
 
 section.navbar2 {
-    width: 100px;
-}
-
-.film-list img {
-    width: 15vw;
-    margin-right: 0.2vw;
-}
-
-section.navbar2 {
     display: flex;
-    width: 10vw;
+    flex-wrap: wrap;
     background-color: #28282893;
-    padding-left: 1%;
-    padding-right: 1%;
-    flex-direction: column;
-    margin-right: 5vw;
+    justify-content: center;
 }
 
-.navbar2 a {
-    font-size: 1.8vw;
-    text-decoration: none;
+section.navbar2 h3 {
+    margin: 0.5em 2em;
+}
+
+.horizontal-scroll {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+div.foto-lijst {
+    flex: 0 0 auto;
 }
 
 .film-list img {
-    width: 16vw;
-    margin-right: 0.3vw;
+    width: 40vw;
+    margin: 0 10px;
     transition: box-shadow 0.5s, transform 0.5s;
 }
 
 .film-list img:hover {
     box-shadow: 0px 0px 20px chartreuse;
     transform: scale(1.02);
-}
-
-.film-list h2 {
-    font-size: 2vw;
 }
 
 /* ABOUT US */
@@ -813,6 +822,10 @@ div.sub-3 {
         margin: 0;
         margin-top: 2rem;
     }
+
+    .film-list img {
+        width: 28vw;
+    }
 }
 
 /* Grote apparaten (laptops en computers, 1200px en hoger) */
@@ -913,5 +926,24 @@ div.sub-3 {
         display: grid;
         grid-template-columns: 300px 300px;
         grid-gap: 25vw;
+    }
+
+    .navbar2 {
+        grid-row: 1;
+        grid-column: 1;
+        align-content: flex-start;
+    }
+
+    .navbar2 h3 {
+        height: 50px;
+    }
+
+    .film-overview{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .film-list img {
+        width: 16vw;
     }
 }
