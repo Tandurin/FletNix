@@ -333,75 +333,6 @@ div.item > h1.logo-inline {
     justify-self: center;
 }
 
-/* LOGIN PAGE */
-
-.loginform {
-    display: flex;
-    background-color: #222222;
-    width: 400px;
-    height: 400px;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.loginform h2 {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.loginform-icon {
-    padding: 10px;
-    background: chartreuse;
-    color: black;
-    text-align: center;
-    min-width: 50px;
-    border-radius: 10px 0 0 10px;
-}
-
-.loginform .inputfield {
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.loginform .inputfield input {
-    padding: 10px;
-    outline: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-.loginform .inputfield input:focus {
-    border: 2px solid chartreuse;
-    border-left-width: 0;
-}
-
-.loginform input[type=submit] {
-    height: 20pt;
-    background-color: chartreuse;
-    opacity: 0.9;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-radius: 12px;
-}
-
-.loginform input[type=submit]:hover {
-    opacity: 1;
-}
-
-.loginform form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.loginform label {
-    visibility: hidden;
-    width: 0;
-}
-
 /* DETAILS PAGE */
 
 .detailspage {
@@ -579,91 +510,11 @@ div.sub-3 {
     margin: 1rem;
 }
 
-/* REGISTRATION PAGE */
-
-.registration-form {
-    display: flex;
-    background-color: #222222;
-    width: 400px;
-    height: 600px;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.registration-form h2 {
-    font-size: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.75rem;
-}
-
-.registerform-icon {
-    padding: 10px;
-    background: chartreuse;
-    color: black;
-    text-align: center;
-    min-width: 50px;
-    border-radius: 10px 0 0 10px;
-}
-
-.registration-form .inputfield {
-    display: flex;
-    width: 100%;
-}
-
-.registration-form .inputfield input {
-    padding: 10px;
-    outline: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-.registration-form .inputfield select {
-    padding: 10px;
-    outline: none;
-    font-family: 'Roboto', sans-serif;
-    margin-top: -1rem;
-}
-
-.registration-form .inputfield input:focus {
-    border: 2px solid chartreuse;
-    border-left-width: 0;
-}
-
-.registration-form input[type=submit] {
-    height: 20pt;
-    background-color: chartreuse;
-    opacity: 0.9;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-radius: 12px;
-    margin-top: 25px;
-}
-
-.registration-form input[type=submit]:hover {
-    opacity: 1;
-}
-
-.registration-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-.registration-form p {
-    margin-bottom: 5px;
-}
-
-.registration-form label {
-    visibility: hidden;
-    width:0;
-}
 
 /* SEARCH PAGE */
 
 .searchform {
+    margin-top: 2rem;
     display: flex;
     background-color: #222222;
     width: 400px;
@@ -739,6 +590,90 @@ div.sub-3 {
 .resultsflex img{
     width: 80vw;
     margin: 2rem;
+}
+
+/* PROFILE PAGE */
+.form {
+    margin-top: 2rem;
+    display: flex;
+    background-color: #222222;
+    width: 400px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+}
+
+.form p {
+    margin-bottom: 5px;
+}
+
+.user-icon {
+    color: chartreuse;
+}
+
+.form h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-icon {
+    padding: 10px;
+    background: chartreuse;
+    color: black;
+    text-align: center;
+    min-width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.form .inputfield {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form .inputfield input {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form .inputfield input:focus {
+    border: 2px solid chartreuse;
+    border-left-width: 0;
+}
+
+.form input[type=submit] {
+    height: 20pt;
+    background-color: chartreuse;
+    opacity: 0.9;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.form input[type=submit]:hover {
+    opacity: 1;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form label {
+    visibility: hidden;
+    width: 0;
+}
+
+.form .inputfield select {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -1rem;
 }
 
 /* Middelgrote apparaten (tablets en grote telefoons, 768px en hoger) */
