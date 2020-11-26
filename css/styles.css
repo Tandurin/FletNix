@@ -478,6 +478,11 @@ section.play-button {
 
 /* FILM OVERVIEW PAGE */
 
+.film-overview {
+    display: flex;
+    margin-top: 2rem;
+}
+
 .navbar2 a {
     font-size: 20px;
     text-decoration: none;
@@ -490,10 +495,6 @@ section.navbar2 {
 .film-list img {
     width: 15vw;
     margin-right: 0.2vw;
-}
-
-.film-overview {
-    display: flex;
 }
 
 section.navbar2 {
@@ -518,6 +519,67 @@ section.navbar2 {
 
 .film-list h2 {
     font-size: 2vw;
+}
+
+/* ABOUT US */
+
+.AboutUs {
+    margin-top: 2rem;
+}
+
+.AboutUs i {
+    color: chartreuse;
+}
+
+.AboutUs p {
+    color: white;
+    background-color:black;
+    padding: 1vw;
+    border: 1px;
+    border-color: chartreuse;
+    border-style: solid;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vw;
+}
+
+.AboutUs img {
+    height: 10vw;
+}
+
+section.pictures {
+display: grid;
+grid-template-columns: 10vw 30vw 20vw 30vw 10vw;
+}
+
+div.foto1 {
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+}
+
+div.foto2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 4;
+}
+
+section.text {
+    display: grid;
+    grid-template-columns: 5vw 40vw 10vw 40vw 5vw;
+    }
+
+div.text1 {
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+}
+
+div.text2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 4;
 }
 
 /* PLAYER */
