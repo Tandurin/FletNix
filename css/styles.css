@@ -462,6 +462,10 @@ section.navbar2 {
 
 .AboutUs {
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .AboutUs i {
@@ -487,36 +491,30 @@ section.navbar2 {
 
 section.pictures {
 display: grid;
-grid-template-columns: 10vw 30vw 20vw 30vw 10vw;
 }
 
 div.foto1 {
     display: flex;
     justify-content: center;
-    grid-column: 2;
 }
 
 div.foto2 {
     display: flex;
     justify-content: center;
-    grid-column: 4;
 }
-
-section.text {
-    display: grid;
-    grid-template-columns: 5vw 40vw 10vw 40vw 5vw;
-    }
 
 div.text1 {
     display: flex;
     justify-content: center;
-    grid-column: 2;
 }
 
 div.text2 {
     display: flex;
     justify-content: center;
-    grid-column: 4;
+}
+
+.AboutUs > div {
+    display: grid;
 }
 
 /* PLAYER */
@@ -804,6 +802,17 @@ div.sub-3 {
         width: 40vw;
         margin: 5vw;
     }
+
+    .AboutUs > div {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-gap: 2rem;
+    }
+
+    .AboutUs .pictures p {
+        margin: 0;
+        margin-top: 2rem;
+    }
 }
 
 /* Grote apparaten (laptops en computers, 1200px en hoger) */
@@ -898,5 +907,11 @@ div.sub-3 {
     .resultsflex img{
         width: 20vw;
         margin: 2vw;
+    }
+
+    .AboutUs > div {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-gap: 25vw;
     }
 }
