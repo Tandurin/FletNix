@@ -10,8 +10,9 @@
         <title>FletNix | Profiel</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="../css/normalize.css" />
-        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../../css/all.min.css" />
+        <link rel="stylesheet" href="../../css/normalize.css" />
+        <link rel="stylesheet" href="../../css/styles.css" />
         <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
@@ -34,12 +35,55 @@
             </nav>
         </header>
 
-        <main>
-            
+        <main class="flexcontainer">
+            <section class="flexcontainer form">
+                <div class="user-icon">
+                    <i class="fa fa-10x fa-user"></i>
+                </div>
+                <form>
+                    <h2>David Gebruiker</h2>
+                    <p>E-mailadres Oud:</p>
+                    <div class="inputfield">
+                        <label for="email">E-mailadres Oud</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="email" id="email" name="email" 
+                        placeholder="E-mailadres" title="E-mail moet juist geformuleerd zijn. Bijvoorbeeld: voorbeeld@host.nl" />
+                    </div>
+                    <p>E-mailadres Nieuw:</p>
+                    <div class="inputfield"> 
+                        <label for="email">E-mailadres Nieuw</label>
+                        <i class="fa fa-user fa-lg form-icon"></i>
+                        <input required type="email" id="email" name="email" 
+                        placeholder="E-mailadres" title="E-mail moet juist geformuleerd zijn. Bijvoorbeeld: voorbeeld@host.nl" />
+                    </div>
+                    <p>Wachtwoord:</p>
+                    <div class="inputfield">
+                        <label for="pass">Wachtwoord</label>
+                        <i class="fa fa-key fa-lg loginform-icon"></i>
+                        <input required type="password" id="pass" name="pass" 
+                        placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." /> <!-- Pattern gevonden op htpp://html5pattern.com -->
+                    </div>
+                    <p>Herhaal Wachtwoord:</p>
+                    <div class="inputfield">
+                        <label for="pass">Wachtwoord</label>
+                        <i class="fa fa-key fa-lg loginform-icon"></i>
+                        <input required type="password" id="pass" name="pass" 
+                        placeholder="Wachtwoord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Wachtwoord moet minimaal 1 cijfer, 1 letter en 1 hoofdletter bevatten en minimaal 8 karakter lang zijn." /> <!-- Pattern gevonden op htpp://html5pattern.com -->
+                    </div>
+                    <input type="submit" value="Wijzigen">
+                </form>
+            </section>
         </main>
 
-        <footer>
-            
+        <footer class="footer">
+            <div class="item">
+                <h1 class="logo-inline">NETNIX</h1>
+            </div>
+            <p>
+                ©2020
+            </p>
         </footer>
     </body>
 </html>
