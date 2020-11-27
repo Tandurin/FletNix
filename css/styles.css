@@ -50,7 +50,7 @@ html {
     scroll-padding-top: 200px;
 }
 
-p, li, button {
+p, li {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -64,6 +64,7 @@ em {
 }
 
 button {
+    font-family: 'Roboto', sans-serif;
     color: black;
     border: none;
     background-color: chartreuse;
@@ -116,13 +117,6 @@ a {
 
 a:hover {
     color: white;
-}
-
-.centerpage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
 }
 
 .flexcontainer {
@@ -183,6 +177,7 @@ h1.logo-inline {
     background-color: chartreuse;
     font-weight: bold;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .navbar a.final-item {
@@ -445,6 +440,7 @@ section.navbar2 h3 {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -500,7 +496,7 @@ div.foto-lijst {
 }
 
 section.pictures {
-display: grid;
+    display: grid;
 }
 
 div.foto {
@@ -533,6 +529,7 @@ video.show-player {
 }
 
 div.sub-item {
+    background-color: #282828;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -543,17 +540,14 @@ div.sub-item {
 
 div.sub-1 {
     grid-row: 1;
-    background-color: #282828;
 }
 
 div.sub-2 {
     grid-row: 2;
-    background-color: #282828;
 }
 
 div.sub-3 {
     grid-row: 3;
-    background-color: #282828;
 }
 
 .regbutton {
@@ -855,21 +849,19 @@ div.sub-3 {
     }
 
     div.sub-1 {
-        grid-row: 1;
         grid-column: 1;
     }
     
     div.sub-2 {
-        grid-row: 1;
         grid-column: 2;
     }
     
     div.sub-3 {
-        grid-row: 1;
         grid-column: 3;
     }
 
     div.sub-item {
+        grid-row: 1;
         width: 25.5vw;
     }
 
