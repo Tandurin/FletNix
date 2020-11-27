@@ -153,7 +153,9 @@ a:hover {
 
 }
 
-h1.logo-inline {
+p.logo-inline {
+    color:chartreuse;
+    font-family: 'Goldman', sans-serif;
     font-size: 1.4em;
     margin: 0;
     padding: 0;
@@ -295,7 +297,7 @@ main section div.cta-button {
     justify-content: center;
 }
 
-div.cta-button a {
+div.cta-button form {
     display: block;
     height: 100%;
     width: 100%;
