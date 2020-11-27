@@ -48,6 +48,7 @@
 html {
     background-color: black;
     scroll-padding-top: 200px;
+    scroll-behavior: smooth;
 }
 
 p, li {
