@@ -88,7 +88,7 @@ body {
 
 h1, h2, h3 {
     color: chartreuse;
-    font-family: 'Goldman', cursive;
+    font-family: 'Goldman', sans-serif;
 }
 
 h1 {
@@ -157,12 +157,13 @@ p.logo-inline {
     color:chartreuse;
     font-family: 'Goldman', sans-serif;
     font-size: 1.4em;
+    font-style: bold;
     margin: 0;
     padding: 0;
     margin-top: -4px;
 }
 
-.navbar nav a:hover>h1 {
+.navbar nav a:hover>p {
     color: black;
 }
 
@@ -328,7 +329,7 @@ footer div.item {
     display: flex;
 }
 
-div.item > h1.logo-inline {
+div.item > p.logo-inline {
     align-self: center;
     justify-self: center;
 }
@@ -521,6 +522,10 @@ div.text {
 
 video.show-player {
     width: 90vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);   
 }
 
 /* SUBSCRIPTION PAGE */
